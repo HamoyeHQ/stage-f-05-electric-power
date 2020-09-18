@@ -1,5 +1,5 @@
 # Household Electric Power Consumption
-
+*The consumption of power in household is a recurring necessity. Using ime series analysis-regression/clustering with these datasets, analyse electric power consumption in households *
 **Dataset Information**
 
 This archive contains 2075259 measurements gathered between December 2006 and November 2010 (47 months).
