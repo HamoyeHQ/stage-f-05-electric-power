@@ -19,11 +19,8 @@ Different electrical quantities and some sub-metering values are available. The 
              table, tr, th, td {
                 border-collapse: collapse;
                 border: 2px solid black;
-                text-align: center;
-                
+                text-align: center;  
             }
-           
-            
         </style>
     </head>
     <body>
@@ -83,7 +80,6 @@ Different electrical quantities and some sub-metering values are available. The 
               <td>Quantitative</td>
               <td>18.4, 23.2, 15</td>
               <td>?</td>
-
           </tr>
           <tr>
               <td>7</td>
@@ -118,5 +114,4 @@ Different electrical quantities and some sub-metering values are available. The 
 *(Global_active_power*1000/60 - sub_metering_1 - sub_metering_2 - sub_metering_3), represents the active energy consumed every minute (in watt hour) in the household by electrical equipment not measured in sub-meterings 1, 2 and 3.
 
 **Acknowledgement**
-\*This data set has been sourced from https://www.kaggle.com/uciml/electric-power-consumption-data-set
-The contributors to this project are as follows:
+This data set has been sourced from https://www.kaggle.com/uciml/electric-power-consumption-data-set. The contributors to this project are as follows:
