@@ -1,14 +1,76 @@
 Hamoye Data science Community Project
 Copyright (c) 2020
 
-Recommended Use: Regression/Clustering Models
-Domain: Electricity
+# Kaggle Project Statement
 
-# HOUSEHOLD ELECTRIC POWER CONSUMPTION DATA SET
+* Often times, we always ask how do these National Electricity Distribution agencies measure and generate the bills the serve to their customers. Out of our inquisitive nature as man, we would realy like to know. It is not rocket science - because our bills are generated based on energy consumption in our household over a given period of time. So, how can i know what contribute to most energy consumption in my household? This is an important question that requires a holistic answer.
 
-This data set has 2075259 rows and 9 columns.
-This dataset provides measurements of electric power consumption in one household with a one-minute sampling rate over a period of almost 4 years.
-Different electrical quantities and some sub-metering values are available. The Following data dictionary gives more details on this data set:
+* Context: Measurements of electric power consumption in one household<b> with a one-minute sampling rate over a period of almost 4 years.</b> Different electrical quantities and some sub-metering values are available.
+
+## Project Aim
+
+* Measurements of electric power consumption in one household with a one-minute sampling rate over a period of almost 4 years. Different electrical quantities and some sub-metering values are available.
+
+# DATA DESCRIPTION
+
+### Data Set Characteristics:
+Multivariate, Time-Series
+
+### Associated Tasks:
+Regression, Clustering
+
+## Data Set Information:
+Data Set Information:
+
+This archive contains 2075259 measurements gathered in a house located in Sceaux (7km of Paris, France) between December 2006 and November 2010 (47 months).
+
+Notes:
+
+1. (global_active_power*1000/60 - sub_metering_1 - sub_metering_2 - sub_metering_3) represents the active energy consumed every minute (in watt hour) in the household by electrical equipment not measured in sub-meterings 1, 2 and 3.
+
+2. The dataset contains some missing values in the measurements (nearly 1.25% of the rows). All calendar timestamps are present in the dataset but for some timestamps, the measurement values are missing: a missing value is represented by the absence of value between two consecutive semi-colon attribute separators. For instance, the dataset shows missing values on April 28, 2007.
+
+[Source](http://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption)
+
+
+### Attribute Information:
+1. date: Date in format dd/mm/yyyy
+
+2. time: time in format hh:mm:ss
+
+3. globalactivepower: household global minute-averaged active power (in kilowatt)
+
+4. globalreactivepower: household global minute-averaged reactive power (in kilowatt)
+
+5. voltage: minute-averaged voltage (in volt)
+
+6. global_intensity: household global minute-averaged current intensity (in ampere)
+
+7. submetering1: energy sub-metering No. 1 (in watt-hour of active energy). It corresponds to the kitchen, containing mainly a dishwasher, an oven and a microwave (hot plates are not electric but gas powered).
+
+8. submetering2: energy sub-metering No. 2 (in watt-hour of active energy). It corresponds to the laundry room, containing a washing-machine, a tumble-drier, a refrigerator and a light.
+
+9. submetering3: energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.
+
+### DATA UNITS EXPLANATION
+1. date and time: The date format is yyyy-mm-dd and time format is HH:MM:SS. The data point interval is reported every mins as average of all measurement taken within a min.
+   
+2. globalactivepower: This is measured in kilowatt i.e 1000watts. watts is unit of power and power energy expended per unit time.
+   
+3. global reactivepower: This is measured in kilowatt i.e 1000watts. watts is unit of power and power energy expended per unit time.
+   
+4. volt: Volt is unit of voltage - which tells the electric potential difference between two point in a conductor carrying current.
+
+5. watt-hour: This measure of energy accross various appliances.
+
+
+### Data Source Climate
+The climate of Paris and the region of Île-de-France is temperate and influenced by the Atlantic Ocean: it is quite cold but not freezing in winter and pleasantly warm in summer. However, it has some continental characteristics too, so it can sometimes be very cold in winter and hot in summer.
+
+# Possible Project Objective
+* I think you can do some time series forecasting with this dataset. For instance you could have fun trying to predict the active power consumption for the next N minutes given the consumption for the p former minutes. p is a hyper parameter of your model ( window width ).
+
+[Source](https://www.kaggle.com/uciml/electric-power-consumption-data-set/discussion/126949)
 
 **Data Dictionary:**
 
@@ -110,8 +172,6 @@ Different electrical quantities and some sub-metering values are available. The 
   </body>
   </html>
 
-**Note:**
-*(Global_active_power*1000/60 - sub_metering_1 - sub_metering_2 - sub_metering_3), represents the active energy consumed every minute (in watt hour) in the household by electrical equipment not measured in sub-meterings 1, 2 and 3.
 
 **Acknowledgement**
 This data set has been sourced from https://www.kaggle.com/uciml/electric-power-consumption-data-set. The contributors to this project are as follows:
